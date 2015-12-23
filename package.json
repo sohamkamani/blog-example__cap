@@ -1,0 +1,19 @@
+{
+  "name": "blog-example__cap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Soham Kamani <sohamkamani@gmail.com> (http://sohamkamani.com)",
+  "license": "ISC",
+  "devDependencies": {
+    "assert": "^1.3.0",
+    "mocha": "^2.3.4",
+    "pm2": "^0.15.10"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
