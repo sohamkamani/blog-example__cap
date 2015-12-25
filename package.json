@@ -1,12 +1,17 @@
 {
-  "name": "blog-example__cap",
+  "name": "my_service",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pm2:start": "pm2 start app.js --name $APP_NAME -l app_logs.log",
+    "pm2:restart": "pm2 stop $APP_NAME && pm2 delete $APP_NAME && npm run pm2:start",
+    "pm2": "if pm2 list | grep $APP_NAME; then npm run pm2:restart; else npm run pm2:start; fi",
+    "debug": "node debug app.js",
+    "start": "node app.js",
+    "test": "mocha test.js"
   },
-  "author": "Soham Kamani <sohamkamani@gmail.com> (http://sohamkamani.com)",
+  "author": "john",
   "license": "ISC",
   "devDependencies": {
     "assert": "^1.3.0",
