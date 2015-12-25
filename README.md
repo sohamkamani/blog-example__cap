@@ -3,4 +3,4 @@
 To start :
 1. Clone repo
 2. ```npm install```
-3. ```cap my_server deploy```
+3. ```cap my_server deploy``` 
